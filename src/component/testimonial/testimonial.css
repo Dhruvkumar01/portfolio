@@ -1,0 +1,41 @@
+.testomonial__container{
+    width: 40rem !important;
+    padding-bottom: 2.5rem !important;
+}
+
+.client{
+    padding: 3rem 4rem;
+    background-color: var(--color-bg2);
+    margin: 0 auto;
+    border-radius: 2rem;
+}
+
+.client__image{
+    width: 8rem;
+    margin: 0 auto;
+}
+
+.client__image>img{
+    aspect-ratio: 1/1;
+    border-radius: 10rem;
+    border: .3rem solid var(--color-primary);
+}
+
+.client__name{
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: 500;
+}
+
+.client__review{
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* for small screen device  */
+
+@media screen and (max-width: 600px) {
+    .testomonial__container{
+        width: 85% !important;
+    }
+}

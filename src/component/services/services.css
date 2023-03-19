@@ -1,0 +1,140 @@
+.services__container{
+    display: flex;
+    gap: 1rem 3rem;
+    justify-content: center;
+    position: relative;
+}
+
+.service{
+    /* background-color: var(--color-bg2);
+    border: 1px solid transparent; */
+    border:1px solid #0a4773b3;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+}
+
+/* .service:hover{
+    background: transparent;
+    
+} */
+
+.service-icon{
+    color: white;
+}
+
+.service-head{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.service-modal-view{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.service-modal-view:hover .view-icon{
+    transform: translateX(5px);
+}
+
+.service-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.service-modal-container{
+    position: relative;
+    padding: 30px 25px;
+    width: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--color-bg2);
+}
+
+.service-modal-title{
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.service-modal-desc{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.service-modal-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.service-modal-list-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.service-modal-close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(189, 61, 61, 0.836);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-icon{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.active-modal{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* for tablet Medium screen devices */
+
+@media screen and (max-width:1000px) {
+    .services__container{
+        width: 90% !important;
+    }
+    .service{
+        padding: 3rem 2rem;
+    }
+}
+
+
+/* for small screen devices */
+
+@media screen and (max-width:550px) {
+    .services__container{
+        flex-direction: column;
+        width: 85% !important;
+    }
+    .service{
+        padding: 1.2rem 1.5rem;
+    }
+    .service-head{
+        margin-bottom: 10px;
+    }
+    .service-modal-container{
+        width: 325px;
+    }
+    .service-modal-desc{
+        font-size: 13px;
+    }
+}
